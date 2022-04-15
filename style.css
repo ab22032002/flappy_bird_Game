@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: cadetblue;
+    background-image: -webkit-linear-gradient(rgb(175,75,75),rgb(31,31,31),rgb(59,135,148));
+    /* making the trasitive color patterns  */
+    min-height: 800px;
+}
+#game{
+    height:500px;
+    width:400px;
+    border:1px solid black;
+    /* background : url(pexels-johannes-plenio-1435075.jpg) center center/cover;*/
+     background: url(bgimg.jpg) center center/cover;
+    /* background-size: cover; */
+    margin: 1rem auto; /* to make it center */
+    overflow:hidden; 
+    /* oveflow hidden makes the overflow hidden so that something goes outof this won't be visible*/
+}
+#block{
+    width:50px;
+    height:500px;
+    background-color: aqua;
+    position: relative;
+    left:200px;  /* block not visible at  400px  here**/
+    animation: block 2s linear infinite;
+    /* border:0.4px solid black; */
+}
+/* to make it move the patch (vertical patch to move within 2s to the whole img*/
+@keyframes block 
+{
+    0% {
+        left:400px;
+    }
+    100%{
+        left:-50px;
+    }
+    
+}
+#hole{
+    height:150px;
+    width:50px;
+    background-color: yellow;
+    /* opacity:0.6; */
+    position:relative;
+    left:400px;
+    top:-500px;
+    animation: block 2s linear infinite;
+}
+#bird{
+    position:fixed;
+    top:100px;
+    height:50px;
+    width:50px;
+}
+#bird img{
+    height:40px;
+    width:40px;
+}
+#result{
+    height:200px;
+    width:500px;
+    background-color: brown;
+    margin: 5rem auto;
+    border:2px solid whitesmoke;
+    display:none;
+    text-align: center;
+}
+#btn{
+    padding:0.5rem 1 rem;
+    border:none;
+    border-radius: 11px;
+    background-color: green;
+    color:white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    cursor:pointer;
+}
