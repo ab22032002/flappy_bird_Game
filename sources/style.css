@@ -13,7 +13,7 @@ body{
     width:400px;
     border:1px solid black;
     /* background : url(pexels-johannes-plenio-1435075.jpg) center center/cover;*/
-     background: url(bgimg.jpg) center center/cover;
+     background: url('images/bgimg.jpg') center center/cover;
     /* background-size: cover; */
     margin: 1rem auto; /* to make it center */
     overflow:hidden; 
